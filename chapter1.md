@@ -1,9 +1,9 @@
 ---
-title: 'Chapter Title Here'
-description: 'Chapter description goes here.'
+title: 'Basics of the basics'
+description: 'This chapter introduces you to basic Python commands.'
 ---
 
-## Example coding exercise
+## Hello world.
 
 ```yaml
 type: NormalExercise
