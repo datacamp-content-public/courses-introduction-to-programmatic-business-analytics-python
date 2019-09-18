@@ -15,8 +15,10 @@ skills: 2
 
 This "exercise" is part of the exam for the course Introduction to programmatic business analytics given in Lappeenranta-Lahti University of Technology.
 
+**If you click "Show solution" in a task, you will get zero (0) points from the task!**
+
 `@instructions`
-(1) Generate a list named #integers that consists of numbers ranging from 1 to 10,000,000 (i.e., [1,2,...,9999999,10000000]).
+(1) Generate a list named #integers# that consists of numbers ranging from 1 to 10,000,000 (i.e., [1,2,...,9999999,10000000]).
 
 (2) Calculate the sum of the first 5,000,000 list elements and print the sum to the console.
 
