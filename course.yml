@@ -1,4 +1,4 @@
-title: Introduction to programmatic business analytics (Python)
-description: Course description goes here.
+title: 'Introduction to programmatic business analytics, exam 1/2 (Python)'
+description: ''
 programming_language: python
-from: python-base-prod:v1.0.2
+from: 'python-base-prod:v1.0.2'
