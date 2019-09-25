@@ -18,8 +18,8 @@ This "exercise" is part of the exam for the course Introduction to programmatic 
 **IF YOU CLICK "Show Answer" IN A TASK, YOU WILL GET ZERO (0) POINTS FROM THE TASK!**
 
 `@instructions`
-1. Generate a list named ```integers``` that consists of numbers ranging from 1 to 1,000,000 (i.e., [1,2,...,999999,1000000]).
-2. Calculate the sum of the first 500,000 list elements and print the sum to the console.
+1. Generate a list named ```integers``` that consists of numbers ranging from 1 to 1,000 (i.e., [1,2,...,999,1000]).
+2. Calculate the sum of the last 500 list elements and print the sum to the console.
 
 `@hint`
 
@@ -37,13 +37,13 @@ This "exercise" is part of the exam for the course Introduction to programmatic 
 `@solution`
 ```{python}
 import numpy as np
-integers = [i for i in range(1,1000001)]
-print(np.sum(integers[:500000]))
+integers = [i for i in range(1,1001)]
+print(np.sum(integers[-500:]))
 ```
 
 `@sct`
 ```{python}
 Ex().check_object("integers").has_equal_value()
-Ex().has_output(446198416)
+Ex().has_output(375250)
 success_msg("Correct, you've earned 5 points!")
 ```
