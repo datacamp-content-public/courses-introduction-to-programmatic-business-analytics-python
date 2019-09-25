@@ -36,9 +36,7 @@ This "exercise" is part of the exam for the course Introduction to programmatic 
 
 `@solution`
 ```{python}
-import numpy as np
-integers = [i for i in range(1,1001)]
-print(np.sum(integers[-500:]))
+
 ```
 
 `@sct`
