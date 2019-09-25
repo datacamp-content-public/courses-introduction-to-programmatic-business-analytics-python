@@ -44,6 +44,6 @@ print(np.sum(integers[-500:]))
 `@sct`
 ```{python}
 Ex().check_object("integers").has_equal_value()
-Ex().has_output(375250)
+Ex().has_output('375250')
 success_msg("Correct, you've earned 5 points!")
 ```
