@@ -35,19 +35,16 @@ This "exercise" is part of the exam for the course Introduction to programmatic 
 `@solution`
 ```{python}
 print('This is an exam, you gotta figure out the solution by yourself')
+integers = []
 ```
 
 `@sct`
 ```{python}
-solution = """
-import numpy as np
-integers = [i for i in range(1,1001)]
-print(np.sum(integers[-500:]))
-"""
+solution = "import numpy as np; integers = [i for i in range(1,1001)]; print(np.sum(integers[-500:]))"
 
 #Ex().has_equal_value(extra_env = {'integers': integers})
 
-Ex().check_object('integers').has_equal_value(override = solution)
+Ex().check_object('integers').has_equal_value(incorrect_msg = 'asdf', override = "integers = [i for i in range(1,1001)]")
 #Ex().has_output(str(np.sum(integers[-500:])))
 success_msg("Correct, you've earned 5 points!")
 ```
