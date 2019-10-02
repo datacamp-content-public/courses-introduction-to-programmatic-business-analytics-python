@@ -36,7 +36,8 @@ This "exercise" is part of the exam for the course Introduction to programmatic 
 
 `@solution`
 ```{python}
-
+print('This is an exam, you gotta figure our the solution by yourself')
+integers = [1,2]
 ```
 
 `@sct`
