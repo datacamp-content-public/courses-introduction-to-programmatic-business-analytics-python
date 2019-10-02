@@ -41,9 +41,7 @@ This "exercise" is part of the exam for the course Introduction to programmatic 
 
 `@sct`
 ```{python}
-import numpy as np
-integers = [i for i in range(1,1001)]
-Ex().check_object("integers").has_equal_value(override = integers)
-Ex().has_output('375250')
+Ex().check_object("integers").has_equal_value(override = [i for i in range(1,1001)])
+Ex().has_output(str(np.sum(integers[-500:])))
 success_msg("Correct, you've earned 5 points!")
 ```
