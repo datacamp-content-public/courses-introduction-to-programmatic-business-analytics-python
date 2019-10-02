@@ -41,10 +41,11 @@ integers = []
 `@sct`
 ```{python}
 solution = "import numpy as np; integers = [i for i in range(1,1001)]; print(np.sum(integers[-500:]))"
+msg = 'Incorrect, try again.'
 
 #Ex().has_equal_value(extra_env = {'integers': integers})
 
-Ex().check_object('integers').has_equal_value(incorrect_msg = 'asdf', override = "integers = [i for i in range(1,1001)]")
+Ex().check_object('integers').has_equal_value(override = solution, incorrect_msg = msg, error_mgs = msg, undefined_msg = msg)
 #Ex().has_output(str(np.sum(integers[-500:])))
 success_msg("Correct, you've earned 5 points!")
 ```
